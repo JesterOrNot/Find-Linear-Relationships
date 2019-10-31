@@ -6,5 +6,5 @@ def mathRelationshipID(x_data, y_data, number,epochsNum):
     xs = np.array(x_data, dtype=float)
     ys = np.array(y_data, dtype=float)
     model.fit(x_data, y_data, epochs=epochsNum)
-    model.predict(number)
-mathRelationshipID([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0],[-2.0, 1.0, 4.0, 7.0, 10.0, 13.0],100,4000)
+    return model.predict(number)
+print(mathRelationshipID([-1.0, 0.0, 1.0, 2.0, 3.0, 4.0],[-2.0, 1.0, 4.0, 7.0, 10.0, 13.0],100,4000))
